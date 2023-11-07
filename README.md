@@ -1,7 +1,13 @@
 # react를 이용한 포트폴리오 사이트 만들기
 
 ## 설치
-1. 폴더를 만들고 리액트를 설치 `npx create-react-app . or npx create-react-app 프로젝트 이름`
+1. react 설치 `npx create-react-app . or npx create-react-app 프로젝트 이름`
+2. gsap 설치 `npm i gsap`
+3. sass 설치 `npm i sass`
+4. lenis 설치 ``
+
+## 작업순서
+1. 폴더를 만들고 리액트를 설치
 2. git에 업로드
     - git에서 commit후 public으로 업로드
 
@@ -9,7 +15,7 @@
 <details>
 <summary>Whitespace에러</summary>
 [Git Bash] warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it   
-   
+<br/>
 [원인]   
 보통 맥 / 리눅스를 쓰는 개발자와 윈도우 쓰는 개발자가 Git으로 협업할 때 발생하는 Whitespace 에러라고 한다.   
    
