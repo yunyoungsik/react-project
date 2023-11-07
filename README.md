@@ -9,7 +9,8 @@
 <details>
 <summary>Whitespace에러</summary>
 [Git Bash] warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it  
-
+  
+  
 [원인]  
 보통 맥 / 리눅스를 쓰는 개발자와 윈도우 쓰는 개발자가 Git으로 협업할 때 발생하는 Whitespace 에러라고 한다.  
 
