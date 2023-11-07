@@ -11,7 +11,6 @@
 [Git Bash] warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it  
 
 [원인]  
-
 보통 맥 / 리눅스를 쓰는 개발자와 윈도우 쓰는 개발자가 Git으로 협업할 때 발생하는 Whitespace 에러라고 한다.  
 
 유닉스 시스템에서는 한 줄의 끝이 LF(Line Feed)로 이루어지는 반면,
@@ -19,7 +18,6 @@
 Git이 이 둘 중 어느 쪽을 선택할지 혼란이 온 것이다.  
 
 [해결방법]  
-
 Git의 core.autocrlf 라는 기능을 켜서 이를 자동 변환 해주도록 하면 된다.  
 
 `git config --global core.autocrlf true` // 시스템 전체에 적용  
