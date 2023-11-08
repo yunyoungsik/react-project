@@ -1,4 +1,5 @@
 import React from 'react'
+import { footerText } from '../constants'
 
 const Footer = () => {
     return (
@@ -18,14 +19,12 @@ const Footer = () => {
                     <div className="right">
                         <h3>social</h3>
                         <ul>
-                            <li>
-                                <a href="https://github.com/yunyoungsik/vite-project">github</a>
-                                <em>깃헙에 들어오시면 모든 소스를 볼 수 있습니다.</em>
-                            </li>
-                            <li>
-                                <a href="/">tistory</a>
-                                <em>티스토리에 들어오시면 좋은 정보 볼 수 있습니다.</em>
-                            </li>
+                            {footerText.map((footer, key) => (
+                                <li key={key}>
+                                    <a href={footer.link}>{footer.linkName}</a>
+                                    <em>{footer.desc}</em>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

@@ -23,12 +23,18 @@
 3. sass 설치 `npm i sass`
 4. lenis 설치 `npm i @studio-freight/lenis`
 5. react-router-dom 설치 `npm i react-router-dom`
+6. firebase 설치 `npm install -g firebase-tools`
 
 ## 작업순서
 1. 리액트 설치
 2. git에 업로드
 3. gsap, sass, lenis 설치,
-4. img는 `import 이름 from '경로'`를 사용하여 import시킨 후 `<img src={이름}>`을 사용한다.
+4. 기존에 작업해둔 html과 css파일을 components폴더와 sass폴더에 구분지어서 저장함
+5. utils폴더에는 스크립트 파일 links.js와 smooth.js를 옮겨온 후 App.js에서 import시켜서 사용함
+6. gsap의 경우 에러가 발상해여 Port.jsx에서 작업하고 menu의 경우 Header에서 useState를 사용하여 작업함
+7. 데이터의 경우 constants폴더에 index.js를 생성하여 배열로 저장후 필요한 부분에 import시켜서 map으로 뿌려줌
+8. 완성 후 `npm run build`를 사용하여 번들링을 함
+9. firebase에 가입하여 VScode에서 에러가 발생 하여 터미널을 열어 해당 경로로 이동 한후 firebase를 설치하고 안내되는 순서에 맞추어 작업함
 
 ## 트러블 슈팅
 <details>
@@ -55,9 +61,13 @@ git의 코드를 개발자가 조회할 때는 LF를 CRLF로 변환해준다고 
 `git config --global core.safecrlf false`   
 이렇게 하여 해당 경고 메세지 기능을 꺼주면 된다.   
 </details>
+   
 <details>
-<summary>자동완성기능</summary>  
+<summary>gsap 에러</summary>
 <br/>
+[원인]   
+APP.js에 port.js를 gsap를 import시켜서 작동할 경우 치수를 인식 못하여 발생하는 문제 
+   
 [해결방법]   
-자동완성 기능은 해당 창 탭이 열려있어야 자동완성기능이 활성화됨  
+Port.jsx에서 useEffect와 useRef를 사용하고 gsap와 ScrollTrigger를 import시키고 #port에 `ref={horizontalRef} = useRef(null)`을 사용하고 port__item에 `ref={(el) => (sectionRef.current[key] = el)`을 사용해서 해결함
 </details>
