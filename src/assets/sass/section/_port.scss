@@ -1,0 +1,127 @@
+#port {
+    width: 100%;
+    overflow: hidden;
+}
+
+.port__inner {
+    padding: 1vw;
+}
+
+.port__wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 7000px;
+}
+
+.port__title {
+    /* position: sticky;
+    top: 65px;
+    left: 0; */
+    width: 100%;
+    height: auto;
+    padding: 2vw;
+    background-color: var(--black);
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 900;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-family: var(--mainPoint-font);
+    box-sizing: border-box;
+}
+
+.port__title em {
+    font-family: var(--mainKor-font);
+    font-size: 1rem;
+    color: var(--mainBg-color);
+    font-weight: 400;
+}
+
+.port__item {
+    width: 500px;
+    height: 70vh;
+    padding: 1vw;
+    margin-right: 20px;
+    background-color: var(--black);
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+}
+
+.port__item .num {
+    position: absolute;
+    left: 1.5vw;
+    top: 1.5vw;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    z-index: 1;
+}
+
+.port__item a {
+    filter: saturate(1);
+    filter: saturate(0);
+    transition: all 0.5s;
+    opacity: 50%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.port__item a:hover {
+    filter: saturate(1);
+    opacity: 100%;
+}
+
+.port__item a svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--white);
+    transition: all 0.3;
+}
+
+.port__item a:hover svg {
+    opacity: 0;
+}
+
+.port__item a img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    /* default: center */
+}
+
+.port__item .title {
+    margin-top: 1vw;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--mainBg-color);
+    position: relative;
+    margin-left: 1vw;
+}
+
+.port__item .title::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    left: -1vw;
+    transform: translateY(-50%);
+    background-color: var(--mainBg-color);
+}
+
+.port__item .desc {
+    font-size: 1rem;
+    margin-top: 0.5vw;
+    color: var(--white);
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* setting */
+
+@import "setting/_fonts.scss";
+@import "setting/_var.scss";
+@import "setting/_reset.scss";
+@import "setting/_mixin.scss";
+
+/* section */
+@import "section/_header.scss";
+@import "section/_intro.scss";
+@import "section/_skill.scss";
+@import "section/_site.scss";
+@import "section/_port.scss";
+@import "section/_contact.scss";
+@import "section/_footer.scss";

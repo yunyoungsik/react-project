@@ -1,0 +1,163 @@
+#contact {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact__inner {
+    padding: 1vw;
+}
+
+.contact__line .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    margin: 0.5vw 0;
+}
+
+.contact__line .line:nth-child(1) {
+    height: 1px;
+    margin: 0.1vw 0 0;
+}
+
+.contact__line .line:nth-child(2) {
+    height: 2px;
+    margin: 0.2vw 0 0;
+}
+
+.contact__line .line:nth-child(3) {
+    height: 3px;
+    margin: 0.3vw 0 0;
+}
+
+.contact__line .line:nth-child(4) {
+    height: 4px;
+    margin: 0.4vw 0 0;
+}
+
+.contact__line .line:nth-child(5) {
+    height: 5px;
+    margin: 0.5vw 0 0;
+}
+
+.contact__line .line:nth-child(6) {
+    height: 6px;
+    margin: 0.6vw 0 0;
+}
+
+.contact__line .line:nth-child(7) {
+    height: 7px;
+    margin: 0.7vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(1) {
+    height: 7px;
+    margin: 0.7vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(2) {
+    height: 6px;
+    margin: 0.6vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(3) {
+    height: 5px;
+    margin: 0.5vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(4) {
+    height: 4px;
+    margin: 0.4vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(5) {
+    height: 3px;
+    margin: 0.3vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(6) {
+    height: 2px;
+    margin: 0.2vw 0 0;
+}
+
+.contact__line.bottom .line:nth-child(7) {
+    height: 1px;
+    margin: 0.1vw 0 0;
+}
+
+.contact__text {
+    background-color: var(--black);
+    padding: 10vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.2;
+    position: relative;
+
+}
+
+.contact__text .good {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 4vw;
+    background-color: #0057ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.contact__text .good:hover {
+    background-color: #014de6;
+}
+
+.contact__text .good svg {
+    width: 3vw;
+    fill: var(--white);
+}
+
+.contact__text .contact__info {
+    margin-bottom: 2vw;
+}
+
+.contact__text .contact__info a {
+    font-family: var(--mainKor-font);
+    color: var(--white);
+    display: block;
+    font-size: 2rem;
+}
+
+.contact__info__bottom {
+    color: var(--black100);
+    font-family: var(--mainKor-font);
+    font-size: 1rem;
+}
+
+.contact__info__bottom .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.contact__info__bottom .good2,
+.contact__info__bottom .view {
+    margin-right: 1vw;
+}
+
+.contact__info__bottom svg {
+    width: 1vw;
+    fill: var(--black100);
+}
+
+.contact__info__bottom p {
+    display: block;
+    font-size: 1rem;
+    color: var(--black100);
+}
