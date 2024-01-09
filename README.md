@@ -23,7 +23,6 @@
 3. sass 설치 `npm i sass`
 4. lenis 설치 `npm i @studio-freight/lenis`
 5. react-router-dom 설치 `npm i react-router-dom`
-6. firebase 설치 `npm install -g firebase-tools`
 
 ## 작업순서
 1. 리액트 설치
@@ -34,7 +33,6 @@
 6. gsap의 경우 에러가 발상해여 Port.jsx에서 작업하고 menu의 경우 Header에서 useState를 사용하여 작업함
 7. 데이터의 경우 constants폴더에 index.js를 생성하여 배열로 저장후 필요한 부분에 import시켜서 map으로 뿌려줌
 8. 완성 후 `npm run build`를 사용하여 번들링을 함
-9. firebase에 가입하여 VScode에서 에러가 발생 하여 터미널을 열어 해당 경로로 이동 한후 firebase를 설치하고 안내되는 순서에 맞추어 작업함
 
 ## 트러블 슈팅
 <details>
